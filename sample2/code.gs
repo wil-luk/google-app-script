@@ -8,6 +8,7 @@ function doGet() {
   - tools > script editor
   - create new project and copy the following code to code.gs
   - create new HTML file (Script Editor > click 'File'> Click 'New'> HTML File
+  - copy the code from index.html to the new HTML File which created with Script Editor 
   */
 
     //var html = HtmlService.createHtmlOutputFromFile('index');
