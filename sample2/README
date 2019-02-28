@@ -1,1 +1,14 @@
-
+  test Google Sheet, App script and Google index file 
+  - create new spreadsheet
+  - change sheet name to 'posts'
+  - type something in the sheet
+  - Click 'tools' > Click 'script editor'
+  - clear all code in code.gs
+  - copy the following code to code.gs
+  - copy the spreadsheet ID 
+  - replace xxxxx in code.gs with the real sheet ID
+  - create new HTML file (Script Editor > click 'File'> Click 'New'> HTML File
+  - copy the code from index.html to the new HTML File which created with Script Editor 
+  - deploy as web app
+  - grant permission 
+  - open web console to check the result
