@@ -9,6 +9,9 @@
   - replace xxxxx in code.gs with the real sheet ID
   - create new HTML file (Script Editor > click 'File'> Click 'New'> HTML File
   - copy the code from index.html to the new HTML File which created with Script Editor 
-  - deploy as web app
+  - deploy gs.code as web app
   - grant permission 
+  - click 'latest code' link to test the code and index.html
+  - copy 'Current web app URL' link to browser 
   - open web console to check the result
+  - Remark: if 'latest code' works while 'current web app URL' not work, try to update the Project Version of the web app
