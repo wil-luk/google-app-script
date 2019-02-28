@@ -1,6 +1,11 @@
 function myFunction() {
-
-  //get source data and write to specific sheet
+  /* Get source data and write to specific sheet 
+     - open Google Sheets
+     - create a spreadsheet with 2 sheets 
+     - name the sheets as test1 and test2
+     - tool > script editor > create a new script file (e.g. code.gs)
+     - copy the follow code to code.gs
+  */
   
   var ss = SpreadsheetApp.openById("xxxxxxxxxx"); //where xxxxxxxxxx is the document ID
   var sourSheet = ss.getSheetByName('test1'); //source sheet
