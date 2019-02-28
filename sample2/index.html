@@ -9,7 +9,8 @@
     <base target="_top"> </head>
  
 <body>
-    <h1>testing</h1>
+    <h1>Press button to show data from Google sheet </h1>
+     <textarea id='mydiv'></textarea>
     <div>
         <input type="button" class="btn1" value="Load Posts"> </div>
     <script>
@@ -24,6 +25,7 @@
         function buildPosts(data) {
             let d = JSON.parse(data);
             console.log(d);
+            document.getElementById('mydiv').value = d;
         }
  
         function init() {
