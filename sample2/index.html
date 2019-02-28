@@ -1,0 +1,35 @@
+<script>
+ var datags = <?!= JSON.stringify(data) ?>;
+ console.log(datags);
+</script>
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <base target="_top"> </head>
+ 
+<body>
+    <h1>testing</h1>
+    <div>
+        <input type="button" class="btn1" value="Load Posts"> </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', init);
+        document.querySelector('.btn1').addEventListener('click', getPostOutput, false);
+ 
+        function getPostOutput() {
+            console.log('clicked');
+            google.script.run.withSuccessHandler(buildPosts).getPosts();
+        }
+ 
+        function buildPosts(data) {
+            let d = JSON.parse(data);
+            console.log(d);
+        }
+ 
+        function init() {
+            console.log('page ready');
+        }
+    </script>
+</body>
+ 
+</html>
