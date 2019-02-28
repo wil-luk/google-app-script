@@ -13,5 +13,5 @@
   - grant permission 
   - click 'latest code' link to test the code and index.html
   - copy 'Current web app URL' link to browser 
-  - open web console to check the result
+  - press button or open web console to check the result
   - Remark: if 'latest code' works while 'current web app URL' not work, try to update the Project Version of the web app
