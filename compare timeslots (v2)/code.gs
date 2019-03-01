@@ -61,7 +61,7 @@ function dataCompare(tutor,student){
         if (matched ==1) {break;} // quit 'j' loop
       }
       if (matched ==0){
-        addResult(1,'no match' + student[i][0] );
+        addResult(1,'no match' + ' - ' + student[i][0] );
       }
   }
 }
