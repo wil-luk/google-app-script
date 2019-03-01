@@ -1,0 +1,25 @@
+/*
+The main function of this app script:  
+1. compare students timetable ("student" sheet) with tutors timetable ("tutor" sheet)
+2. If student's timeslot can match with tutor's timeslot, the script will write to final table ("result" sheet)
+3. If the timeslots of a student can't match tutors' timeslots, the script will aslo write to final table ("result" sheet)
+4. algorithm 
+    use student as reference, compare with tutor's available timeslot
+      if match > update tutor's available timeslot (that slot will mark as '-') and write the match result to result sheet 
+      if not match > check next tutor
+      if finally can't match any tutor > write to result sheet that no match
+      check next student
+
+Usage:
+1. create a spreadsheet file
+2. create 3 sheets which are 'tutor', 'student', 'result'
+3. For tutor sheet, the header should be Name, Monday, Tuesday, Wednesday, Thursday, Friday
+4. For student sheet, the header should be Name, Monday, Tuesday, Wednesday, Thursday, Friday
+5. The cell content of Monday, Tuesday, ... Friday should be follow the pattern below:
+    9:00 - 10:00, 11:00 - 12:00
+6. The cell content for tutor and student must follow the same pattern
+7. For result sheet, it should be blanked before running the script
+8. Open Tools and select script editor.
+9. Copy the content of file (code.gs) to code.gs
+10. run the script and it may take some time to complete the matching
+*/
