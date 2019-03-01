@@ -71,5 +71,4 @@ function addResult(day,data){
   var sheet = ss.getSheetByName('result'); //result sheet
   var numRows = sheet.getLastRow();
   sheet.getRange(numRows + 1,day).setValue(data);
-  //sheet.appendRow(data); // can't use appendRow as data is a single cell string
 }
