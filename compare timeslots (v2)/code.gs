@@ -1,3 +1,14 @@
+function mainFunction(){
+  clearSheet();
+  readData();
+}
+
+function clearSheet(){
+  var ss = SpreadsheetApp.openById("xxxxxxxxxx"); //where xxxxxxxxxx is the document ID
+  var resultSheet = ss.getSheetByName('result'); //result sheet  
+  resultSheet.clear();
+}
+
 function readData() {
   var ss = SpreadsheetApp.openById("xxxxxxxxxx"); //where xxxxxxxxxx is the document ID
   var data1Sheet = ss.getSheetByName('tutor'); //source data 1 sheet
