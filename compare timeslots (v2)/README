@@ -18,8 +18,7 @@ Usage:
 5. The cell content of Monday, Tuesday, ... Friday should be follow the pattern below:
     9:00 - 10:00, 11:00 - 12:00
 6. The cell content for tutor and student must follow the same pattern
-7. For result sheet, it should be blanked before running the script
-8. Open Tools and select script editor.
-9. Copy the content of file (code.gs) to code.gs
-10. run the script and it may take some time to complete the matching
+7. Open Tools and select script editor.
+8. Copy the content of file (code.gs) to code.gs
+9. run the script and it may take some time to complete the matching
 */
