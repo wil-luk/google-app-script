@@ -17,7 +17,7 @@ Usage:
 4. For student sheet, the header should be Name, Monday, Tuesday, Wednesday, Thursday, Friday
 5. The cell content of Monday, Tuesday, ... Friday should be follow the pattern below:
     9:00 - 10:00, 11:00 - 12:00
-6. The cell content for tutor and student must follow the same pattern
+6. The pattern of the timeslots for tutor and student must consistent
 7. Open Tools and select script editor.
 8. Copy the content of file (code.gs) to code.gs
 9. run the script and it may take some time to complete the matching
