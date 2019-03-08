@@ -1,16 +1,17 @@
 function mainFunction(){
-  clearSheet();
-  readData();
+  var sname = "xxxxxxxxxx"; //where xxxxxxxxxx is the document ID
+  clearSheet(sname);
+  readData(sname);
 }
 
-function clearSheet(){
-  var ss = SpreadsheetApp.openById("xxxxxxxxxx"); //where xxxxxxxxxx is the document ID
+function clearSheet(sname){
+  var ss = SpreadsheetApp.openById(sname);
   var resultSheet = ss.getSheetByName('result'); //result sheet  
   resultSheet.clear();
 }
 
-function readData() {
-  var ss = SpreadsheetApp.openById("xxxxxxxxxx"); //where xxxxxxxxxx is the document ID
+function readData(sname) {
+  var ss = SpreadsheetApp.openById(sname);
   var data1Sheet = ss.getSheetByName('tutor'); //source data 1 sheet
   var data2Sheet = ss.getSheetByName('student'); //source data 2 sheet
   var resultSheet = ss.getSheetByName('result'); //result sheet  
