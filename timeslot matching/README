@@ -6,6 +6,12 @@ New approach
 4. match student timeslot with tutor timeslots
 5. generate a matching list
 6. calculate the number of matching for each student
-7. prioritize student list according to the number of matched timeslots (lesser has higher priority while morer has low priority)
+7. prioritize student list according to the number of matched timeslots 
+   (lesser has higher priority while morer has low priority)
 8. select one timeslot for each student as the final matching
+
+Further development
+1. prioritize the final output (student1 > student 2, etc)
+2. improve matching method
+3. improve the methodology for timeslot selection
 
