@@ -266,5 +266,5 @@ function merge (left, right) {
     }
   }
 
-  return result.concat(left.slice(indexLeft)).concat(right.slice(indexRight));
+  return result.concat(left.slice(indexLeft)).concat(right.slice(indexRight)); //merge left array and right array into one array
 }
