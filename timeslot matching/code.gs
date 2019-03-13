@@ -108,24 +108,24 @@ function convertBack(data){
   
   for (var i = 0; i < data.length; i++){
     if (parseInt(data[i].split(',')[2]) >= 36) {
-    day = 'Friday';
-    timeslot = ts[parseInt(data[i].split(',')[2]) - 36];
+      day = 'Friday';
+      timeslot = ts[parseInt(data[i].split(',')[2]) - 36];
     }
     if ((parseInt(data[i].split(',')[2]) >= 27) && (parseInt(data[i].split(',')[2]) < 36)) {
-    day = 'Thursday';
-    timeslot = ts[parseInt(data[i].split(',')[2]) - 27];
+      day = 'Thursday';
+      timeslot = ts[parseInt(data[i].split(',')[2]) - 27];
     }
     if ((parseInt(data[i].split(',')[2]) >= 18) && (parseInt(data[i].split(',')[2]) < 27)) {
-    day = 'Wednesday';
-    timeslot = ts[parseInt(data[i].split(',')[2]) - 18];
+      day = 'Wednesday';
+      timeslot = ts[parseInt(data[i].split(',')[2]) - 18];
     }
     if ((parseInt(data[i].split(',')[2]) >= 9) && (parseInt(data[i].split(',')[2]) < 18)) {
-    day = 'Tuesday';
-    timeslot = ts[parseInt(data[i].split(',')[2]) - 9];
+      day = 'Tuesday';
+      timeslot = ts[parseInt(data[i].split(',')[2]) - 9];
     }
     if ((parseInt(data[i].split(',')[2]) >= 0) && (parseInt(data[i].split(',')[2]) < 9)) {
-    day = 'Monday';
-    timeslot = ts[parseInt(data[i].split(',')[2]) ];
+      day = 'Monday';
+      timeslot = ts[parseInt(data[i].split(',')[2]) ];
     }        
     arr.push(data[i].split(',')[0] + ','+ data[i].split(',')[1] + ',' + day + ',' + timeslot);
   }
