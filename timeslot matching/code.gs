@@ -1,4 +1,4 @@
-function newFunction(){
+function MainFunction(){
   var sname = "xxxxxxxxxx" ; //where xxxxxxxxxx is the document ID
   var masterArr = []; //tutor array, student array
   var tArr = []; //tutor timeslot list array
