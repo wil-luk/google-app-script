@@ -128,7 +128,6 @@ function convertBack(data){
     timeslot = ts[parseInt(data[i].split(',')[2]) ];
     }        
     arr.push(data[i].split(',')[0] + ','+ data[i].split(',')[1] + ',' + day + ',' + timeslot);
-    //Logger.log('day:'+day+ ' timeslot:'+ timeslot);
   }
   return arr;
 }
@@ -140,6 +139,7 @@ function sortArr(data){
   var sortArr = [];
   var compareResult =0;
   var finalArr = [];
+  
   // no need to sort as pre-sorted
   // compare next one
   // find the number of matched timeslot(s) for each student
@@ -148,13 +148,10 @@ function sortArr(data){
   // yes = existing student , match ++ 
   // final -> add to arr
   // prevent missing last item, need to check final item and match status 
-  
-  //Logger.log('data.length ' + data.length);
 
   for (var i =0 ; i < data.length ; i ++){   
     if ((matched >0)&&(data[i].split(',')[0] != current)){
         matchArr.push(matched+','+current); // matched - no of time, current - studnet name
-        //Logger.log(current +' - no of matched: ' + matched);
     }
     if (data[i].split(',')[0] != current){
       current = data[i].split(',')[0];
@@ -165,7 +162,6 @@ function sortArr(data){
     }       
     if ((matched >0)&& ( i == data.length-1)){
         matchArr.push(matched+','+current); // matched - no of time, current - studnet name
-        //Logger.log(current +' - no of matched: ' + matched);
     }
   }
   
